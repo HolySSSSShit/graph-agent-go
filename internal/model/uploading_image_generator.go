@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/HolySSSSShit/go-agent/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
 )
 
 // UploadingImageGenerator 将模型返回的图片交给通用存储接口，返回持久化地址。

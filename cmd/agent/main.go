@@ -8,14 +8,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/HolySSSSShit/go-agent/internal/api"
-	"github.com/HolySSSSShit/go-agent/internal/config"
-	"github.com/HolySSSSShit/go-agent/internal/core"
-	"github.com/HolySSSSShit/go-agent/internal/orchestrator"
-	"github.com/HolySSSSShit/go-agent/internal/policy"
-	"github.com/HolySSSSShit/go-agent/internal/prompt"
-	"github.com/HolySSSSShit/go-agent/internal/session"
-	"github.com/HolySSSSShit/go-agent/internal/workflow/orderexample"
+	"github.com/HolySSSSShit/graph-agent-go/internal/api"
+	"github.com/HolySSSSShit/graph-agent-go/internal/config"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/orchestrator"
+	"github.com/HolySSSSShit/graph-agent-go/internal/policy"
+	"github.com/HolySSSSShit/graph-agent-go/internal/prompt"
+	"github.com/HolySSSSShit/graph-agent-go/internal/session"
+	"github.com/HolySSSSShit/graph-agent-go/internal/workflow/orderexample"
 )
 
 // 核心发行版装配通用基础设施和不访问真实业务数据的示例 Workflow。

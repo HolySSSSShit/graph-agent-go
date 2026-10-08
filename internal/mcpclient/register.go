@@ -5,7 +5,7 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/HolySSSSShit/go-agent/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
 )
 
 // SourceRegistrar 是 MCP source 接入共享工具目录所需的最小注册边界。

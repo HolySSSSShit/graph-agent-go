@@ -1,4 +1,4 @@
-# Go Agent 技术架构
+# Graph Agent Go 技术架构
 
 ## 模块边界
 

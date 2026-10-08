@@ -5,7 +5,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/HolySSSSShit/go-agent/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
 )
 
 const ToolSchemaLoaderName = "get_tool_schema"

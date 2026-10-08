@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/HolySSSSShit/go-agent/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
 )
 
 // Event 是运行过程中发送给前端的 SSE 事件 payload。progress 只描述节点阶段，不暴露原始思维链。

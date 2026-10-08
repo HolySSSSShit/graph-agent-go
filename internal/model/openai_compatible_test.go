@@ -8,7 +8,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/HolySSSSShit/go-agent/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
 )
 
 func TestOpenAICompatibleSendsJSONResponseFormat(t *testing.T) {

@@ -4,8 +4,8 @@ package testkit
 import (
 	"context"
 
-	"github.com/HolySSSSShit/go-agent/internal/core"
-	"github.com/HolySSSSShit/go-agent/internal/orchestrator"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/orchestrator"
 )
 
 const WorkflowID = "test"

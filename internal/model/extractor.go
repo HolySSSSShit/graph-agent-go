@@ -8,7 +8,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/HolySSSSShit/go-agent/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
 )
 
 // JSONOutputExtractor 将模型返回的 JSON 或 fenced JSON 解析为受控执行结果。

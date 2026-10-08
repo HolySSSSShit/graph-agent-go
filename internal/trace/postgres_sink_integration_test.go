@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/HolySSSSShit/go-agent/internal/core"
-	"github.com/HolySSSSShit/go-agent/internal/session"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/session"
 )
 
 func TestPostgresSinkStoresAuditProjectionAndModelDiagnostics(t *testing.T) {

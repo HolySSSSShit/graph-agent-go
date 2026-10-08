@@ -1,4 +1,4 @@
-module github.com/HolySSSSShit/go-agent
+module github.com/HolySSSSShit/graph-agent-go
 
 go 1.26
 

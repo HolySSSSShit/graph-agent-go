@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/HolySSSSShit/go-agent/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
 )
 
 // Request 将待确认动作写入数据库。相同 approval_id 的重复请求只返回仍处于 pending 的记录。

@@ -6,7 +6,7 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/HolySSSSShit/go-agent/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
 )
 
 // NodeInput 是 Workflow 节点唯一可见的执行输入。State 是当前 Workflow 的

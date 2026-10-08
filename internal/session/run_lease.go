@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/HolySSSSShit/go-agent/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
 )
 
 const defaultRunLeaseDuration = 30 * time.Second

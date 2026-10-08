@@ -1,8 +1,8 @@
 package orderexample
 
 import (
-	"github.com/HolySSSSShit/go-agent/internal/core"
-	"github.com/HolySSSSShit/go-agent/internal/orchestrator"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/orchestrator"
 )
 
 // Dependencies 是示例 Workflow 的外部依赖。真实业务可在这里加入模型、工具注册表等接口。

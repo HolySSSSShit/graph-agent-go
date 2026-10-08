@@ -7,7 +7,7 @@ import (
 	"slices"
 	"sync"
 
-	"github.com/HolySSSSShit/go-agent/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
 )
 
 // MemoryCheckpointStore 保存完整快照，适合开发调试和单元测试。

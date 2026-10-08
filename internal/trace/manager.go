@@ -11,7 +11,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/HolySSSSShit/go-agent/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
 )
 
 // Manager 是默认的进程内 Trace 实现，同时可选地将事件追加写入 JSONL 文件。

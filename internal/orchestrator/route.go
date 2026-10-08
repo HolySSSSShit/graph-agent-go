@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/HolySSSSShit/go-agent/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
 )
 
 // ConfiguredRouteResolver 根据图定义和强类型 Workflow State 解析下一跳。

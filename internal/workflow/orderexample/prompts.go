@@ -3,8 +3,8 @@ package orderexample
 import (
 	"path/filepath"
 
-	"github.com/HolySSSSShit/go-agent/internal/core"
-	"github.com/HolySSSSShit/go-agent/internal/prompt"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/prompt"
 )
 
 func orderPromptManager(global core.PromptManager) core.PromptManager {

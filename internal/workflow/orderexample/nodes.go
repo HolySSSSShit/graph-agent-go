@@ -4,8 +4,8 @@ import (
 	"context"
 	"strings"
 
-	"github.com/HolySSSSShit/go-agent/internal/core"
-	"github.com/HolySSSSShit/go-agent/internal/orchestrator"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/orchestrator"
 )
 
 func newOrderNodes() (*orchestrator.NodeRegistry[OrderState], error) {

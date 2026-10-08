@@ -1,4 +1,4 @@
-# Go Agent 功能边界
+# Graph Agent Go 功能边界
 
 ## 核心模块
 

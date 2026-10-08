@@ -7,7 +7,7 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/HolySSSSShit/go-agent/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
 )
 
 // StateCodec 负责把某个 Workflow 的强类型业务状态转换为 checkpoint payload。

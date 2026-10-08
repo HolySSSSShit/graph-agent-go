@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/HolySSSSShit/go-agent/internal/core"
-	"github.com/HolySSSSShit/go-agent/internal/orchestrator"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/orchestrator"
 )
 
 func TestOrderWorkflowBindsStateGraphAndCapabilities(t *testing.T) {

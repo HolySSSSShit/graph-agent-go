@@ -1,6 +1,6 @@
 # 开发规范
 
-本项目是 Go Agent 开发模板，不提供真实业务 Workflow 或公共 SDK。
+本项目是 Graph Agent Go 开发模板，不提供真实业务 Workflow 或公共 SDK。
 
 - Graph 是流程控制唯一来源：路由、预算、重入和降级在 Graph/resolver 中实现。
 - 每个 Workflow 在自己的包中绑定强类型 State、StateCodec、Graph、NodeRegistry、

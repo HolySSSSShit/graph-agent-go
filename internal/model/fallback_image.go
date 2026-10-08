@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/HolySSSSShit/go-agent/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
 )
 
 // FallbackImageGenerator 主图片生成失败后按次数重试，仍失败时切换备用生成器。

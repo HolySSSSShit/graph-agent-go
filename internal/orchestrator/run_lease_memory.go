@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/HolySSSSShit/go-agent/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
 )
 
 // MemoryRunLeaseStore 用于单测，模拟 PostgreSQL 的租户并发计数和租约 CAS。

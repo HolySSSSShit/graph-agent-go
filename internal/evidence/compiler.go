@@ -10,7 +10,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/HolySSSSShit/go-agent/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
 )
 
 // Contract 与技能一起由外部维护。应用代码只执行通用契约，不拥有业务指标名称。

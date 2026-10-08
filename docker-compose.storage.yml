@@ -1,4 +1,4 @@
-name: go-agent
+name: graph-agent-go
 
 services:
   postgres:

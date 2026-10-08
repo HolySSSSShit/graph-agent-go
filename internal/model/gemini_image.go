@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/HolySSSSShit/go-agent/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
 )
 
 // ImageStore 保存模型返回的图片并返回可访问地址。

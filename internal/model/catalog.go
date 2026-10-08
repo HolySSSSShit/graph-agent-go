@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/HolySSSSShit/go-agent/internal/config"
-	"github.com/HolySSSSShit/go-agent/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/config"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
 )
 
 const mockURLPrefix = "http://mock-model.local"

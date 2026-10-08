@@ -5,7 +5,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/HolySSSSShit/go-agent/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
 )
 
 func (r *Runner) renewLease(ctx context.Context, lease core.RunLease, done chan<- struct{}, cancel context.CancelFunc) {

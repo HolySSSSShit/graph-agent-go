@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/HolySSSSShit/go-agent/internal/core"
-	"github.com/HolySSSSShit/go-agent/internal/prompt"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/prompt"
 )
 
 type compactModel struct {

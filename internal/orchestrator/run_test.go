@@ -6,10 +6,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/HolySSSSShit/go-agent/internal/core"
-	"github.com/HolySSSSShit/go-agent/internal/orchestrator"
-	"github.com/HolySSSSShit/go-agent/internal/session"
-	"github.com/HolySSSSShit/go-agent/internal/testkit"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/orchestrator"
+	"github.com/HolySSSSShit/graph-agent-go/internal/session"
+	"github.com/HolySSSSShit/graph-agent-go/internal/testkit"
 )
 
 type timeoutNode struct{}

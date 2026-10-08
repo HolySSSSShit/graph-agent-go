@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/HolySSSSShit/go-agent/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
 )
 
 // QwenImageGenerator 是公共 OpenAI 兼容生图服务适配器，供各 Workflow 复用。

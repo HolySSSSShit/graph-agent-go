@@ -1,6 +1,7 @@
-# Go Agent
+# Graph Agent Go
 
-A Go agent runtime template with a small example workflow. Clone or fork this
+A graph-driven agent runtime template in Go, with typed workflows, checkpoint
+recovery, MCP tools, and HTTP/SSE streaming. Clone or fork this
 repository to build your own workflows. This is a template, not a public Go SDK:
 implementation packages live under `internal/`.
 
@@ -17,8 +18,8 @@ bindings demonstrate declarations only.
 Requires Go 1.26 or newer. Run commands from the repository root.
 
 ```bash
-git clone https://github.com/HolySSSSShit/go-agent.git
-cd go-agent
+git clone https://github.com/HolySSSSShit/graph-agent-go.git
+cd graph-agent-go
 AGENT_CONFIG_FILE=config.integration.toml go run ./cmd/agent
 ```
 

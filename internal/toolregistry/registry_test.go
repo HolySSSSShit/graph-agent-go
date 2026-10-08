@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/HolySSSSShit/go-agent/internal/core"
-	"github.com/HolySSSSShit/go-agent/internal/harness"
-	"github.com/HolySSSSShit/go-agent/internal/mcpclient"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/harness"
+	"github.com/HolySSSSShit/graph-agent-go/internal/mcpclient"
 )
 
 type staticToolSource struct {

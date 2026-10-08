@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/HolySSSSShit/go-agent/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
 )
 
 // OpenAIImageGenerator 适配 NewAPI 的两种 OpenAI 兼容图片协议。

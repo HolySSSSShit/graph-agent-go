@@ -10,7 +10,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/HolySSSSShit/go-agent/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
 )
 
 // Manager 只提供跨 Workflow 的全局提示模板。

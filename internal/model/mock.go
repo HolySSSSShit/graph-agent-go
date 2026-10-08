@@ -3,7 +3,7 @@ package model
 import (
 	"context"
 
-	"github.com/HolySSSSShit/go-agent/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
 )
 
 // Mock 返回通用文本，仅用于无凭证的本地联调。

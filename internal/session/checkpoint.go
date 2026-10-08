@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/HolySSSSShit/go-agent/internal/core"
+	"github.com/HolySSSSShit/graph-agent-go/internal/core"
 )
 
 // SaveCheckpoint 将一次节点完成后的完整运行快照写入 PostgreSQL。
