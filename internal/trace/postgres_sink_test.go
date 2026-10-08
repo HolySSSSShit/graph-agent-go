@@ -8,7 +8,7 @@ import (
 	"github.com/HolySSSSShit/go-agent/internal/core"
 )
 
-func TestProjectDropsRawModelAndToolPayloads(t *testing.T) {
+func TestProjectRetainsToolAuditFields(t *testing.T) {
 	thinking := true
 	event := core.TraceEvent{
 		TraceID: "trace-1", RunID: "run-1", SessionID: "session-1", TenantID: "tenant-1", UserID: "user-1",

@@ -10,6 +10,9 @@
 `internal/trace` 提供审计 sink。checkpoint 存储通用 RunState 外壳，
 Workflow payload 的编解码由所属 StateCodec 完成。
 
+trace 投影保留模型诊断提示词、输出和工具参数。字段的 JSON 序列化不代表
+脱敏，接入方按自己的安全策略在记录前处理敏感内容并控制持久化访问。
+
 模型、上下文、提示词、MCP、工具注册、Harness、策略、证据编译和展示模块
 通过 `core` 接口接入。核心包不导入具体 Workflow。
 

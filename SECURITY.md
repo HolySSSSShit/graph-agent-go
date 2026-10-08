@@ -24,6 +24,9 @@ suggested fix. Do not include real credentials, customer data or private traces.
   of Git. The Compose credentials are for a dedicated local development database.
 - Trace and checkpoint data may contain sensitive inputs. Configure storage
   permissions, retention and access controls for your deployment.
+- Trace sinks can persist model prompts, model output and tool arguments.
+  JSON serialization does not redact credentials or personal data; sanitize
+  inputs before recording them when your deployment requires redaction.
 - Use dedicated test databases for integration checks; tests apply migrations.
 
 The project does not currently promise security backports for older commits.

@@ -2,6 +2,7 @@ package trace
 
 import (
 	"context"
+	"encoding/json"
 	"fmt"
 	"os"
 	"testing"
@@ -11,7 +12,7 @@ import (
 	"github.com/HolySSSSShit/go-agent/internal/session"
 )
 
-func TestPostgresSinkStoresOnlySanitizedProjection(t *testing.T) {
+func TestPostgresSinkStoresAuditProjectionAndModelDiagnostics(t *testing.T) {
 	dsn := os.Getenv("AGENT_TEST_POSTGRES_DSN")
 	if dsn == "" {
 		t.Skip("AGENT_TEST_POSTGRES_DSN is not configured")
@@ -53,8 +54,8 @@ func TestPostgresSinkStoresOnlySanitizedProjection(t *testing.T) {
 	base.Attempt = 1
 	base.ResultBytes = 1234
 	base.ResultHandleID = "hdl_test"
-	base.Prompt = []core.Message{{Role: "user", Content: "must not persist"}}
-	base.Output = "must not persist"
+	base.Prompt = []core.Message{{Role: "user", Content: "diagnostic prompt"}}
+	base.Output = "diagnostic output"
 	if err := sink.Record(ctx, base); err != nil {
 		t.Fatal(err)
 	}
@@ -87,8 +88,31 @@ func TestPostgresSinkStoresOnlySanitizedProjection(t *testing.T) {
 	if err := sink.db.QueryRowContext(ctx, `SELECT count(*) FROM agent_trace_events WHERE run_id = $1`, runID).Scan(&events); err != nil {
 		t.Fatal(err)
 	}
-	if events != 3 {
-		t.Fatalf("trace event count = %d, want 3; raw model output must be rejected", events)
+	if events != 4 {
+		t.Fatalf("trace event count = %d, want 4 including model diagnostics", events)
+	}
+	var storedPrompt, storedOutput string
+	if err := sink.db.QueryRowContext(ctx, `SELECT prompt_json::text, output_text FROM agent_trace_events WHERE run_id = $1 AND type = 'model.output'`, runID).Scan(&storedPrompt, &storedOutput); err != nil {
+		t.Fatal(err)
+	}
+	var messages []core.Message
+	if err := json.Unmarshal([]byte(storedPrompt), &messages); err != nil {
+		t.Fatal(err)
+	}
+	if len(messages) != 1 || messages[0].Content != "diagnostic prompt" || storedOutput != "diagnostic output" {
+		t.Fatalf("model diagnostics not persisted: prompt=%s output=%q", storedPrompt, storedOutput)
+	}
+	base.Sequence = 5
+	base.Type = "tool.result"
+	if err := sink.Record(ctx, base); err != nil {
+		t.Fatal(err)
+	}
+	var afterRejected int
+	if err := sink.db.QueryRowContext(ctx, `SELECT count(*) FROM agent_trace_events WHERE run_id = $1`, runID).Scan(&afterRejected); err != nil {
+		t.Fatal(err)
+	}
+	if afterRejected != events {
+		t.Fatalf("non-allowlisted event was persisted: before=%d after=%d", events, afterRejected)
 	}
 	var evidenceCount int
 	if err := sink.db.QueryRowContext(ctx, `SELECT evidence_count FROM agent_trace_events WHERE run_id = $1 AND type = 'evidence.compiled'`, runID).Scan(&evidenceCount); err != nil {

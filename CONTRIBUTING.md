@@ -23,6 +23,7 @@ belongs in the workflow package. Keep startup wiring small and reuse the existin
 interfaces rather than adding parallel owners or implicit fallbacks.
 
 Keep files in UTF-8 and use concise Chinese comments to match existing source.
+Source files use LF line endings, enforced by `.gitattributes`.
 Update README, FEATURES and relevant design documents when behavior changes.
 
 ## Validation

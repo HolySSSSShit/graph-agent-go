@@ -7,6 +7,7 @@
 - Runner 的 checkpoint、恢复、租约、取消、审批、审计和 SSE。
 - HTTP 健康检查、会话管理、运行事件及审批控制接口。
 - 内存/PostgreSQL 存储、数据库迁移、文件/PostgreSQL trace。
+- trace 诊断字段可保存模型提示词、输出和工具参数，接入方负责脱敏和访问控制。
 - OpenAI 兼容和 Gemini 模型适配、模型目录、通用 mock。
 - 图片生成、fallback、通用存储接口和本地存储适配器。
 - 上下文窗口、结果压缩、会话摘要、提示词加载。
