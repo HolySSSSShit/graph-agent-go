@@ -1,0 +1,14 @@
+ALTER TABLE agent_tool_calls
+    ADD COLUMN IF NOT EXISTS arguments_json JSONB;
+
+ALTER TABLE agent_trace_events
+    ADD COLUMN IF NOT EXISTS message TEXT,
+    ADD COLUMN IF NOT EXISTS next_stage TEXT,
+    ADD COLUMN IF NOT EXISTS metadata_json JSONB;
+
+ALTER TABLE agent_runs
+    ADD COLUMN IF NOT EXISTS event_count INTEGER NOT NULL DEFAULT 0,
+    ADD COLUMN IF NOT EXISTS tool_call_count INTEGER NOT NULL DEFAULT 0,
+    ADD COLUMN IF NOT EXISTS model_call_count INTEGER NOT NULL DEFAULT 0,
+    ADD COLUMN IF NOT EXISTS last_stage TEXT,
+    ADD COLUMN IF NOT EXISTS last_message TEXT;

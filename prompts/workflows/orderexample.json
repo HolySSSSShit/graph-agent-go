@@ -1,0 +1,15 @@
+{
+  "templates": [
+    {
+      "id": "system",
+      "version": "order-example-v1",
+      "sections": [
+        {
+          "name": "订单示例角色",
+          "purpose": "示例 Workflow 边界",
+          "content": "你只处理示例订单号查询，并根据已验证的订单数据组织结果；缺少订单号时应请求用户补充。"
+        }
+      ]
+    }
+  ]
+}

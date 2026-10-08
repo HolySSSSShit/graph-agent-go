@@ -1,0 +1,60 @@
+[server]
+listen = "127.0.0.1:8081"
+log_level = "info"
+sse_enabled = true
+
+[model]
+default = "openai:gpt-4.1-mini"
+
+[model.providers.openai]
+base_url = "https://api.openai.com/v1"
+api_key = ""
+temperature = 0.2
+top_p = 1.0
+max_tokens = 8192
+structured_outputs = true
+
+[model.roles]
+compact = "openai:gpt-4.1-mini"
+
+[mcp]
+base_url = "http://127.0.0.1:8080/mcp"
+token = ""
+protocol_version = "2025-06-18"
+request_timeout_seconds = 20
+max_response_bytes = 1048576
+shadow_directory = "data/shadow"
+
+[database]
+driver = "memory"
+url = ""
+timezone = "Asia/Shanghai"
+
+[runtime]
+max_steps = 64
+max_tool_calls = 5
+max_retries = 2
+request_timeout_seconds = 300
+
+[context]
+max_tokens = 81920
+reserve_tokens = 10240
+tool_result_max_tokens = 8192
+compact_keep_messages = 12
+compact_max_tokens = 2048
+
+[skills]
+enabled = false
+directory = "skills"
+catalog = "catalog.json"
+max_items = 3
+max_token_budget = 4096
+min_match_score = 0.5
+
+[prompts]
+directory = "prompts"
+
+[logging]
+access_file = "logs/access.log"
+audit_file = "logs/audit.log"
+database_trace = false

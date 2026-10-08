@@ -1,0 +1,2 @@
+ALTER TABLE agent_evidence_facts
+    ADD COLUMN IF NOT EXISTS kind TEXT NOT NULL DEFAULT '';
